@@ -4,9 +4,18 @@ $(function () {
       nextArrow: '<img class="slider-btn slider-btn__next" src="images/icon/arrow-next.svg" alt="">',
       slidesToShow: 1,
       slidesToScroll: 1,
-      infinite: false,
+      infinite: true,
+      fade: true,
       dots: true,
       
+      responsive: [
+         {
+            breakpoint: 1103,
+            settings: {
+               arrows: false,
+            }
+         },
+      ]
    });
 
 
